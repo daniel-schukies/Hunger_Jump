@@ -71,6 +71,7 @@ public class Player : MonoBehaviour
 
 	void FixedUpdate()
 	{
+        if (speedin == null) return;
 		if (speedin.actualHeight < 50) {
 			zoomOut = true;
 			this.ScaleCamera ();
